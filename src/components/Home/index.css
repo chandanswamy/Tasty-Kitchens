@@ -1,0 +1,34 @@
+.home-route {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-restaurants {
+  width: 90%;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-restaurants {
+    width: 90%;
+    max-width: 1180px;
+    margin-bottom: 64px;
+  }
+}
+
+.restaurant-list {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

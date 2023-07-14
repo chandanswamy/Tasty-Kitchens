@@ -1,0 +1,108 @@
+.link-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #475569;
+  width: 100%;
+  max-width: 340px;
+}
+
+.restaurant-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 4px 4px 4px 0px;
+}
+
+.thumbnail {
+  width: 160px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.restaurant-name {
+  color: var(--light-blue-gray-700, #334155);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.2px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-name {
+    color: var(--light-blue-gray-700, #334155);
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 0.2px;
+  }
+}
+
+.cuisine-name {
+  color: var(--light-blue-gray-500, #64748b);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .cuisine-name {
+    color: var(--light-blue-gray-500, #64748b);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+}
+
+.rating-review-count-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  color: #ffcc00;
+  margin-right: 12px;
+}
+
+.rating {
+  color: var(--light-blue-gray-900, #0f172a);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 12px;
+}
+
+.total-reviews {
+  color: var(--light-blue-gray-500, #64748b);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
