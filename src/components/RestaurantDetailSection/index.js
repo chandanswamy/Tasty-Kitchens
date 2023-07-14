@@ -83,7 +83,10 @@ class RestaurantDetailSection extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="restaurant-loader-container">
+    <div
+      testid="restaurant-details-loader"
+      className="restaurant-loader-container"
+    >
       <Loader type="TailSpin" color="#F7931E" height="50" width="50" />
     </div>
   )

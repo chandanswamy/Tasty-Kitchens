@@ -40,11 +40,11 @@ const FoodItemCard = props => {
           foodObject.length > 0 ? foodObject[0].id === foodData.id : false
 
         return (
-          <li className="food-item">
+          <li testid="foodItem" className="food-item">
             <img src={imageUrl} alt="food-item" className="food-img" />
             <div className="food-item-content-container">
               <h1 className="food-name">{name}</h1>
-              <p className="cost">₹ {cost}.00</p>
+              <p className="cost">{`₹ ${cost}.00`}</p>
               <p className="rating">
                 <AiFillStar className="ai-star" /> {rating}
               </p>
@@ -55,14 +55,18 @@ const FoodItemCard = props => {
                     type="button"
                     className="quantity-controller-button"
                     onClick={onClickDecrement}
+                    testid="decrement-count"
                   >
                     <BsDashSquare color="#52606D" size={12} />
                   </button>
-                  <p className="cart-quantity">{quantity}</p>
+                  <p testid="active-count" className="cart-quantity">
+                    {quantity}
+                  </p>
                   <button
                     type="button"
                     className="quantity-controller-button"
                     onClick={onClickIncrement}
+                    testid="increment-count"
                   >
                     <BsPlusSquare color="#52606D" size={12} />
                   </button>

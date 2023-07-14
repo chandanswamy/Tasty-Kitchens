@@ -6,7 +6,6 @@ import Header from '../Header'
 import CartContext from '../../context/CartContext'
 
 import './index.css'
-import Footer from '../Footer'
 
 const PaymentSuccess = () => (
   <CartContext.Consumer>
@@ -23,9 +22,7 @@ const PaymentSuccess = () => (
             <BsFillCheckCircleFill className="check-sign" />
             <h1 className="success-heading">Payment Successful</h1>
             <p className="success-description">
-              Thank you for ordering
-              <br />
-              Your payment is successfully completed.
+              Thank you for ordering Your payment is successfully completed.
             </p>
             <Link to="/" className="link-button">
               <button

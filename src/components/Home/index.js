@@ -122,7 +122,10 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="restaurant-loader-container">
+    <div
+      testid="restaurants-list-loader"
+      className="restaurant-loader-container"
+    >
       <Loader type="TailSpin" color="#F7931E" height="50" width="50" />
     </div>
   )
@@ -155,16 +158,19 @@ class Home extends Component {
             type="button"
             className="page-controller-button"
             onClick={this.onClickLeft}
+            testid="pagination-left-button"
           >
             <MdKeyboardArrowLeft className="pagination-arrow" />
           </button>
           <p className="page-no-quantity">
-            <span>{activePage}</span> of {Math.ceil(totalItems / 9)}
+            <span testid="active-page-number">{activePage}</span> of{' '}
+            {Math.ceil(totalItems / 9)}
           </p>
           <button
             type="button"
             className="page-controller-button"
             onClick={this.onClickRight}
+            testid="pagination-right-button"
           >
             <MdKeyboardArrowRight className="pagination-arrow" />
           </button>

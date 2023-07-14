@@ -71,11 +71,13 @@ class Header extends Component {
       <>
         <nav className="navbar">
           <div className="navbar-logo-title-container">
-            <img
-              src="https://res.cloudinary.com/chandanswamy/image/upload/v1687847733/Frame_274_j3lpbz.png"
-              alt="tasty hat"
-              className="nav-image"
-            />
+            <Link to="/">
+              <img
+                src="https://res.cloudinary.com/chandanswamy/image/upload/v1687847733/Frame_274_j3lpbz.png"
+                alt="website logo"
+                className="nav-image"
+              />
+            </Link>
             <h1 className="nav-title">Tasty Kitchens</h1>
           </div>
           <ul className="navbar-desktop-menu-container">

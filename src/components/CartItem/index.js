@@ -29,7 +29,7 @@ const CartItem = props => (
 
       return (
         <li className="cart-item">
-          <div className="cart-item-container">
+          <div testid="cartItem" className="cart-item-container">
             <img className="cart-product-image" src={imageUrl} alt={name} />
             <div className="cart-details-content-container">
               <h1 className="cart-product-title">{name}</h1>
@@ -39,14 +39,18 @@ const CartItem = props => (
                   type="button"
                   className="quantity-controller-button"
                   onClick={onClickDecrement}
+                  testid="decrement-quantity"
                 >
                   <BsDashSquare color="#52606D" size={20} />
                 </button>
-                <p className="cart-quantity">{quantity}</p>
+                <p testid="item-quantity" className="cart-quantity">
+                  {quantity}
+                </p>
                 <button
                   type="button"
                   className="quantity-controller-button"
                   onClick={onClickIncrement}
+                  testid="increment-quantity"
                 >
                   <BsPlusSquare color="#52606D" size={20} />
                 </button>
