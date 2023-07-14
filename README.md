@@ -8,7 +8,12 @@ Tasty Kitchens is a mini project built using React JS that serves as a kind of S
 
 - **Navbar:** The navigation bar allows users to easily navigate to different routes within the application, making it simple to browse and find their desired content.
 
-- **Authentication and Authorization:** Tasty Kitchens includes authentication and authorization features to ensure secure usage of the application. Users can create an account, log in, and perform actions based on their assigned roles.
+- **Pagination:** The application incorporates pagination to efficiently display a large amount of content. It allows users to navigate through multiple pages of restaurant listings, making it easier to find and explore different options.
+
+- **Local Storage:** Tasty Kitchens utilizes local storage to store cart items. This allows users to add items to their cart and have them persist even if they close or refresh the application. It provides a seamless shopping experience by retaining the selected items.
+
+- **Authentication and Authorization:** Tasty Kitchens includes authentication and authorization features to ensure secure usage of the application. Users can
+  log in, and perform actions based on their assigned roles.
 
 ## Technologies Used
 
@@ -24,6 +29,8 @@ The following technologies were used in the development of Tasty Kitchens:
 
 - **Node.js:** Node.js is a JavaScript runtime used for building server-side applications. It may be used in this project for backend functionality or API integrations.
 
+- **Figma:** Figma, a popular design tool, was used for designing and styling the CSS of the application. It facilitated the creation of visually pleasing and intuitive user interfaces.
+
 ## Third-Party Packages Used
 
 Tasty Kitchens incorporates the following third-party packages to enhance its functionality:
@@ -35,6 +42,8 @@ Tasty Kitchens incorporates the following third-party packages to enhance its fu
 - **React Loader Spinner:** This package provides loading spinners that can be used to indicate background processes or content loading, enhancing the user experience.
 
 - **React-Popup:** The React-Popup package is utilized to create customizable popups or modals that can be used to display additional information or interact with the user.
+
+- **Cookies:** The Cookies package is used for handling cookies in the application. It provides functionality for setting, getting, and managing cookies, which can be useful for authentication and other purposes.
 
 ## Installation
 
@@ -49,7 +58,7 @@ To run Tasty Kitchens locally, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd tasty-kitchens
+   cd Tasty-Kitchens
    ```
 
 3. Install the dependencies:
@@ -66,40 +75,6 @@ To run Tasty Kitchens locally, follow these steps:
 
    The application should now be running on [http://localhost:3000](http://localhost:3000).
 
-## Contributing
-
-Contributions to Tasty Kitchens are welcome! If you have any suggestions, bug reports, or feature requests, please submit them through the GitHub repository's issue tracker.
-
-If you would like to contribute code to the project, please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch:
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. Make your changes and commit them:
-
-   ```bash
-   git commit -m "Add your commit message here"
-   ```
-
-4. Push your changes to the branch:
-
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-5. Open a pull request on the main repository.
-
-Please ensure that your code follows the project's coding conventions and includes appropriate tests.
-
-## License
-
-Tasty Kitchens is released under the [MIT License](LICENSE).
-
 ## Contact
 
-For any inquiries or further information, please contact us at [email protected]
+For any inquiries or further information, please contact us at [email](chandanswamy13214@gmail.com)
