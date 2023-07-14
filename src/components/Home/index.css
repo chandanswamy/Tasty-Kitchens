@@ -21,7 +21,7 @@
   .home-restaurants {
     width: 90%;
     max-width: 1180px;
-    margin-bottom: 64px;
+    margin-bottom: 48px;
   }
 }
 
@@ -31,4 +31,40 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-controller-button {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 1px solid var(--light-blue-gray-700, #334155);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.pagination-arrow {
+  font-size: 28px;
+  color: #52606d;
+}
+
+.page-no-quantity {
+  color: var(--light-blue-gray-700, #334155);
+  text-align: center;
+  font-family: Bree Serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  margin: 0px 12px 0px 12px;
 }

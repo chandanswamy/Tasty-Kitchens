@@ -1,6 +1,8 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
+import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
+
 import Header from '../Header'
 import Footer from '../Footer'
 import CarouselContainer from '../CarouselContainer'
@@ -96,6 +98,29 @@ class Home extends Component {
     }
   }
 
+  changeSortby = activeOptionId => {
+    this.setState({activeOptionId}, this.getRestaurant)
+  }
+
+  onClickLeft = () => {
+    this.setState(prevState => {
+      if (prevState.activePage > 1) {
+        return {activePage: prevState.activePage - 1}
+      }
+      return {activePage: prevState.activePage}
+    }, this.getRestaurant)
+  }
+
+  onClickRight = () => {
+    this.setState(prevState => {
+      const totalPages = prevState.totalItems / 9
+      if (prevState.activePage <= totalPages) {
+        return {activePage: prevState.activePage + 1}
+      }
+      return {activePage: prevState.activePage}
+    }, this.getRestaurant)
+  }
+
   renderLoadingView = () => (
     <div className="restaurant-loader-container">
       <Loader type="TailSpin" color="#F7931E" height="50" width="50" />
@@ -125,6 +150,25 @@ class Home extends Component {
             />
           ))}
         </ul>
+        <div className="page-container">
+          <button
+            type="button"
+            className="page-controller-button"
+            onClick={this.onClickLeft}
+          >
+            <MdKeyboardArrowLeft className="pagination-arrow" />
+          </button>
+          <p className="page-no-quantity">
+            <span>{activePage}</span> of {Math.ceil(totalItems / 9)}
+          </p>
+          <button
+            type="button"
+            className="page-controller-button"
+            onClick={this.onClickRight}
+          >
+            <MdKeyboardArrowRight className="pagination-arrow" />
+          </button>
+        </div>
       </div>
     )
   }

@@ -7,6 +7,7 @@ import PageNotFound from './components/PageNotFound'
 import Login from './components/Login'
 
 import './App.css'
+import ProtectedRoute from './components/ProtectedRoute'
 
 // eslint-disable-next-line
 const sortByOptions = [
@@ -28,8 +29,13 @@ class App extends Component {
       <>
         <Switch>
           <Route exact path="/login" component={Login} />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/cart" component={Cart} />
+          <ProtectedRoute
+            exact
+            path="/"
+            component={Home}
+            sortByOptions={sortByOptions}
+          />
+          <ProtectedRoute exact path="/cart" component={Cart} />
           <Route exact path="/not-found" component={PageNotFound} />
           <Redirect to="/not-found" />
         </Switch>

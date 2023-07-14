@@ -6,6 +6,10 @@
   flex-shrink: 0;
   background: var(--light-blue-gray-50, #f8fafc);
   padding: 12px 24px 12px 24px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 .navbar-logo-title-container {
@@ -77,7 +81,7 @@
   padding: 0px;
 }
 
-.link-item {
+.menu-link-item {
   text-decoration: none;
   cursor: pointer;
 }

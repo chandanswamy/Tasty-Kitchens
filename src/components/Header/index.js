@@ -30,10 +30,10 @@ class Header extends Component {
           {close => (
             <>
               <ul className="navbar-mobile-menu-container">
-                <Link to="/" className="link-item">
+                <Link to="/" className="menu-link-item">
                   <li className={`list-item ${home}`}>Home</li>
                 </Link>
-                <Link to="/cart" className="link-item">
+                <Link to="/cart" className="menu-link-item">
                   <li className={`list-item ${cart}`}>Cart</li>
                 </Link>
                 <li className="list-item">
