@@ -12,6 +12,9 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 20px;
+  position: relative;
+  top: 100;
+  bottom: 0;
 }
 
 .footer-app-logo-box {

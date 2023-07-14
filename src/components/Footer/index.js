@@ -1,5 +1,9 @@
-import {BsInstagram, BsTwitter, BsWhatsapp} from 'react-icons/bs'
-import {FaFacebookSquare} from 'react-icons/fa'
+import {
+  FaFacebookSquare,
+  FaPinterestSquare,
+  FaInstagram,
+  FaTwitter,
+} from 'react-icons/fa'
 import './index.css'
 
 const FooterAppLogo =
@@ -8,18 +12,30 @@ const FooterAppLogo =
 const Footer = () => (
   <div className="footer-box">
     <div className="footer-app-logo-box">
-      <img src={FooterAppLogo} alt="app-logo" className="footer-app-logo" />
+      <img
+        src={FooterAppLogo}
+        alt="website-footer-logo"
+        className="footer-app-logo"
+      />
       <h2 className="footer-app-title">Tasty Kitchens</h2>
     </div>
     <p className="footer-caption-text">
-      The only thing we are serious about is food.
+      The only thing we are serious about is food. <br /> Contact us on
     </p>
-    <p className="footer-caption-text">Contact Us</p>
     <div className="social-media-icons-box">
-      <BsInstagram className="social-media-icon" />
-      <BsTwitter className="social-media-icon" />
-      <FaFacebookSquare className="social-media-icon" />
-      <BsWhatsapp className="social-media-icon" />
+      <FaPinterestSquare
+        testid="pintrest-social-icon"
+        className="social-media-icon"
+      />
+      <FaInstagram
+        testid="instagram-social-icon"
+        className="social-media-icon"
+      />
+      <FaTwitter testid="twitter-social-icon" className="social-media-icon" />
+      <FaFacebookSquare
+        testid="facebook-social-icon"
+        className="social-media-icon"
+      />
     </div>
   </div>
 )

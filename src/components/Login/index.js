@@ -57,7 +57,7 @@ class Login extends Component {
         <div className="login-route-mobile-image-container">
           <img
             src="https://res.cloudinary.com/chandanswamy/image/upload/v1689252847/Rectangle_1457_vw4xjj.png"
-            alt="Tasty Kitchens Login"
+            alt="website login"
             className="login-mobile-image"
           />
         </div>
@@ -65,7 +65,7 @@ class Login extends Component {
           <form className="login-form" onSubmit={this.submitForm}>
             <img
               src="https://res.cloudinary.com/chandanswamy/image/upload/v1687847733/Frame_274_j3lpbz.png"
-              alt="tasty hat"
+              alt="website logo"
               className="form-image"
             />
             <h1 className="form-title">Tasty Kitchens</h1>
@@ -103,7 +103,7 @@ class Login extends Component {
         <div className="login-route-image-container">
           <img
             src="https://res.cloudinary.com/chandanswamy/image/upload/v1687841293/Rectangle_1456_hhciw2.png"
-            alt="Tasty Kitchens Login"
+            alt="website login"
             className="login-image"
           />
         </div>
