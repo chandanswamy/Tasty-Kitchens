@@ -1,4 +1,4 @@
-# Tasty Kitchens - React JS Mini Project
+# [Tasty Kitchens - React JS Mini Project](https://cstastykitchens.ccbp.tech/)
 
 Tasty Kitchens is a mini project built using React JS that serves as a kind of Swiggy/Zomato clone. It allows users to browse and order food from various restaurants, providing a responsive web design, a navbar for easy navigation, and authentication and authorization features for secure usage of the application.
 
@@ -74,6 +74,23 @@ To run Tasty Kitchens locally, follow these steps:
    ```
 
    The application should now be running on [http://localhost:3000](http://localhost:3000).
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Acknowledgements
+
+I would like to thank the following resources for their valuable contributions to this project:
+
+- [js-cookie Documentation](https://www.npmjs.com/package/js-cookie)
+- [react-icons Documentation](https://react-icons.github.io/react-icons/)
+- [react-loader-spinner Documentation](https://www.npmjs.com/package/react-loader-spinner)
+- [Create React App Documentation](https://create-react-app.dev/)
+- [react-slick Documentation](https://react-slick.neostack.com/)
+- [slick-carousel Documentation](https://kenwheeler.github.io/slick/)
+
+Feel free to refer to their documentation for more details on how to use their respective packages.
 
 ## Contact
 
