@@ -27,6 +27,7 @@
 
 .carousel-loader-container {
   margin: 16px 0px 16px 0px;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;

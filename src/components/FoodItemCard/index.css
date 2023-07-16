@@ -101,14 +101,19 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 .cart-quantity {
   color: #52606d;
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
-  margin: 8px;
+  margin: 0px 10px 0px 10px;
   line-height: 1.3;
 }
 

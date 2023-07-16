@@ -63,7 +63,7 @@ class CarouselContainer extends Component {
 
   renderLoadingView = () => (
     <div
-      testid="restaurants-offers-loader"
+      data-testid="restaurants-offers-loader"
       className="carousel-loader-container"
     >
       <Loader type="TailSpin" color="#F7931E" height="50" width="50" />

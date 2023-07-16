@@ -23,7 +23,7 @@ const CartSummary = () => (
           <hr className="dotted-line" />
           <div className="order-total-value">
             <h1 className="order-total-label">Order Total:</h1>
-            <p className="order-total-label-amount" testid="total-price">
+            <p className="order-total-label-amount" data-testid="total-price">
               Rs {total} /-
             </p>
           </div>

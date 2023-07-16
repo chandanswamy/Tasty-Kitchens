@@ -4,6 +4,13 @@
   align-items: center;
 }
 
+.restaurant-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
 .wallpaper-container {
   width: 100%;
   min-height: 20vh;
