@@ -14,6 +14,10 @@ Tasty Kitchens is a mini project built using React JS that serves as a kind of S
 
 - **Authentication and Authorization:** Tasty Kitchens includes authentication and authorization features to ensure secure usage of the application. Users can
   log in, and perform actions based on their assigned roles.
+  ```bash
+  Username: rahul
+  Password: rahul@2021
+  ```
 
 ## Technologies Used
 
