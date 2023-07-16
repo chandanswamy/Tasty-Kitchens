@@ -1,4 +1,4 @@
-# [Tasty Kitchens - React JS Mini Project](https://cstastykitchens.ccbp.tech/)
+# [Tasty Kitchens - (React JS Mini Project)](https://cstastykitchens.ccbp.tech/)
 
 Tasty Kitchens is a mini project built using React JS that serves as a kind of Swiggy/Zomato clone. It allows users to browse and order food from various restaurants, providing a responsive web design, a navbar for easy navigation, and authentication and authorization features for secure usage of the application.
 
@@ -12,8 +12,7 @@ Tasty Kitchens is a mini project built using React JS that serves as a kind of S
 
 - **Local Storage:** Tasty Kitchens utilizes local storage to store cart items. This allows users to add items to their cart and have them persist even if they close or refresh the application. It provides a seamless shopping experience by retaining the selected items.
 
-- **Authentication and Authorization:** Tasty Kitchens includes authentication and authorization features to ensure secure usage of the application. Users can
-  log in, and perform actions based on their assigned roles.
+- **Authentication and Authorization:** Tasty Kitchens includes authentication and authorization features to ensure secure usage of the application. Users can log in, and perform actions based on their assigned roles.
   ```bash
   Username: rahul
   Password: rahul@2021
