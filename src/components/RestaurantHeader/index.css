@@ -146,3 +146,32 @@
     line-height: 24px; /* 150% */
   }
 }
+
+.search-input-container {
+  width: 90%;
+  max-width: 350px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 8px 2px 8px;
+  border: 1px solid var(--light-blue-gray-600, #f7931e);
+
+  border-radius: 8px;
+}
+
+.search-input {
+  flex-grow: 1;
+  margin-right: 12px;
+  height: 42px;
+  border: 0px;
+  padding-left: 12px;
+  outline: none;
+  font-size: 15px;
+  color: var(--light-blue-gray-600, #475569);
+}
+
+.search-icon {
+  font-size: 24px;
+  color: #f7931e;
+}

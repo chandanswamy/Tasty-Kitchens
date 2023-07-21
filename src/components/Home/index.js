@@ -135,14 +135,31 @@ class Home extends Component {
     history.push('/not-found')
   }
 
+  enterSearchInput = () => {
+    this.getRestaurant()
+  }
+
+  changeSearchInput = searchInput => {
+    this.setState({searchInput})
+  }
+
   renderRestaurantListView = () => {
-    const {restaurantList, activeOptionId, activePage, totalItems} = this.state
+    const {
+      restaurantList,
+      activeOptionId,
+      activePage,
+      totalItems,
+      searchInput,
+    } = this.state
     return (
       <div className="all-restaurant-container">
         <RestaurantHeader
           activeOptionId={activeOptionId}
           sortByOptions={sortByOptions}
           changeSortby={this.changeSortby}
+          searchInput={searchInput}
+          changeSearchInput={this.changeSearchInput}
+          enterSearchInput={this.enterSearchInput}
         />
         <ul className="restaurant-list">
           {restaurantList.map(restaurant => (

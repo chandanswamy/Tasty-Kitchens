@@ -1,12 +1,24 @@
-import {BsFilterRight} from 'react-icons/bs'
+import {BsFilterRight, BsSearch} from 'react-icons/bs'
 
 import './index.css'
 
 const RestaurantHeader = props => {
-  const {sortByOptions, activeOptionId} = props
+  const {sortByOptions, activeOptionId, searchInput} = props
   const onChangeSortby = event => {
     const {changeSortby} = props
     changeSortby(event.target.value)
+  }
+
+  const onEnterSearchInput = event => {
+    const {enterSearchInput} = props
+    if (event.key === 'Enter') {
+      enterSearchInput()
+    }
+  }
+
+  const onChangeSearchInput = event => {
+    const {changeSearchInput} = props
+    changeSearchInput(event.target.value)
   }
 
   return (
@@ -40,6 +52,17 @@ const RestaurantHeader = props => {
             ))}
           </select>
         </div>
+      </div>
+      <div className="search-input-container">
+        <input
+          value={searchInput}
+          type="search"
+          className="search-input"
+          placeholder="Search"
+          onChange={onChangeSearchInput}
+          onKeyDown={onEnterSearchInput}
+        />
+        <BsSearch className="search-icon" />
       </div>
     </div>
   )
